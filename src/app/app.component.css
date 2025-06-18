@@ -1,0 +1,30 @@
+/* Navigation container */
+.nav-links {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Navigation links */
+  .nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-links a:hover {
+    background-color: #e6f0ff;
+    color: #0056b3;
+  }
+  
+  /* Active link styling */
+  .active-link {
+    background-color: #007bff;
+    color: white;
+  }
+  

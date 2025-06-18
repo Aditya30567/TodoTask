@@ -1,0 +1,38 @@
+<div class="task-input-container">
+    <label for="taskInput">Add a Task:</label>
+    <input
+      type="text"
+      id="taskInput"
+      name="task"
+      [(ngModel)]="inputTask"
+      placeholder="Enter your task here"
+    />
+    <button (click)="addTask()">Submit</button>
+  </div>
+  
+  <hr />
+  
+  <div class="task-list">
+    <div class="task-item" *ngFor="let item of allTask">
+      <span class="task-detail">{{ item.detail }}</span>
+  
+      <label class="checkbox-label">
+        <input
+          type="checkbox"
+          [(ngModel)]="item.isCheckbox"
+          (change)="onCheckboxChange(item)"
+        />
+        Done
+      </label>
+  
+      <label class="checkbox-label">
+        <input
+          type="checkbox"
+          [(ngModel)]="item.isFavourite"
+          (change)="onFavouriteChange(item)"
+        />
+        Favourite
+      </label>
+    </div>
+  </div>
+  
