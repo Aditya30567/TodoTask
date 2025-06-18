@@ -1,0 +1,16 @@
+<div class="completed-task-list">
+    <div class="completed-task-item" *ngFor="let item of taskCompleted">
+      <span class="task-detail">{{ item.detail }}</span>
+  
+      <label class="delete-label">
+        <input
+          type="checkbox"
+          name="delete"
+          [value]="item.isCheckbox"
+          (change)="deleteTask(item)"
+        />
+        Delete
+      </label>
+    </div>
+  </div>
+  

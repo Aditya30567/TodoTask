@@ -1,0 +1,33 @@
+/* Completed task list */
+.completed-task-list {
+    margin-top: 20px;
+  }
+  
+  .completed-task-item {
+    background-color: #f0f0f0;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-left: 5px solid #17a2b8;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  
+  /* Favourite checkbox */
+  .favorite-label {
+    font-size: 14px;
+    color: #ffc107;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .favorite-label input[type="checkbox"] {
+    margin-right: 6px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
